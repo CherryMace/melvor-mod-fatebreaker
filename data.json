@@ -156,37 +156,37 @@
               "itemID": "melvorTotH:Golden_Key",
               "minQuantity": 1,
               "maxQuantity": 1,
-              "weight": 20
+              "weight": 99
             },
             {
               "itemID": "melvorD:Bones",
               "minQuantity": 1,
               "maxQuantity": 4,
-              "weight": 20
+              "weight": 99
             },
             {
               "itemID": "melvorD:Dragon_Bones",
               "minQuantity": 1,
               "maxQuantity": 4,
-              "weight": 20
+              "weight": 99
             },
             {
               "itemID": "melvorD:Magic_Bones",
               "minQuantity": 1,
               "maxQuantity": 4,
-              "weight": 20
+              "weight": 99
             },
             {
               "itemID": "melvorD:Big_Bones",
               "minQuantity": 1,
               "maxQuantity": 4,
-              "weight": 20
+              "weight": 99
             },
             {
               "itemID": "fatebreaker:Chains_of_Fate",
               "minQuantity": 1,
               "maxQuantity": 1,
-              "weight": 1
+              "weight": 5
             }
           ],
           "remove": [

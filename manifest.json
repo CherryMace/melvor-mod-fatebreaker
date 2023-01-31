@@ -1,5 +1,6 @@
 {
   "namespace": "fatebreaker",
+  "icon": "assets/icon.png",
   "setup": "setup.mjs",
   "load": "data.json"
 }

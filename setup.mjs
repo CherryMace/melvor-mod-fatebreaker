@@ -27,7 +27,7 @@ function addModifierData() {
   // Add the modifier's data to the global `modifierData` object.
   // This object stores information about all available modifiers in the game,
   // and is used for things like displaying the modifier in an item's description.
-  const description = `While the enemy is attacking with ${sealedFate.name}, Auto Eat Threshold and Auto Eat HP Limit is set to \${value}%`;
+  const description = `While the enemy is attacking with ${sealedFate.name}, Auto Eat Threshold and Auto Eat HP Limit are set to \${value}%`;
   modifierData.brokenFate = {
     get langDescription() {
       return description;

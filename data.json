@@ -1,0 +1,203 @@
+{
+  "$schema": "https://melvoridle.com/assets/schema/gameData.json",
+  "data": {
+    "items": [
+      {
+        "itemType": "Item",
+        "id": "Chains_of_Fate",
+        "name": "Chains of Fate",
+        "category": "Combat",
+        "type": "Fragment",
+        "media": "assets/chains_of_fate.svg",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 3333333,
+        "customDescription": "Used in forging the Fatebreaker"
+      },
+      {
+        "itemType": "Item",
+        "id": "Broken_Seal",
+        "name": "Broken Seal",
+        "category": "Combat",
+        "type": "Fragment",
+        "media": "assets/broken_seal.svg",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 3333333,
+        "customDescription": "Used in forging the Fatebreaker"
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Fatebreaker",
+        "name": "Fatebreaker",
+        "category": "Misc",
+        "type": "Armour",
+        "media": "assets/fatebreaker.svg",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 8888888,
+        "tier": "none",
+        "validSlots": [
+          "Amulet",
+          "Passive"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "brokenFate": 91
+        }
+      }
+    ],
+    "itemUpgrades": [
+      {
+        "upgradedItemID": "fatebreaker:Fatebreaker",
+        "gpCost": 0,
+        "scCost": 0,
+        "itemCosts": [
+          {
+            "id": "fatebreaker:Chains_of_Fate",
+            "quantity": 1
+          },
+          {
+            "id": "fatebreaker:Broken_Seal",
+            "quantity": 1
+          }
+        ],
+        "rootItemIDs": [
+          "fatebreaker:Chains_of_Fate",
+          "fatebreaker:Broken_Seal"
+        ],
+        "isDowngrade": false
+      }
+    ],
+    "shopPurchases": [
+      {
+        "id": "Broken_Seal",
+        "media": "assets/broken_seal.svg",
+        "category": "melvorD:Materials",
+        "contains": {
+          "items": [
+            {
+              "id": "fatebreaker:Broken_Seal",
+              "quantity": 1
+            }
+          ]
+        },
+        "cost": {
+          "gp": {
+            "type": "Fixed",
+            "cost": 50000000
+          },
+          "slayerCoins": {
+            "type": "Fixed",
+            "cost": 0
+          },
+          "items": [],
+          "raidCoins": {
+            "type": "Fixed",
+            "cost": 0
+          }
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Attack",
+            "level": 120
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Strength",
+            "level": 120
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Defence",
+            "level": 120
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 120
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Magic",
+            "level": 120
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false
+      }
+    ],
+    "shopDisplayOrder": [
+      {
+        "insertAt": "After",
+        "afterID": "melvorD:Red_Party_Hat",
+        "ids": [
+          "fatebreaker:Broken_Seal"
+        ]
+      }
+    ]
+  },
+  "modifications": {
+    "monsters": [
+      {
+        "id": "melvorTotH:GuardianoftheHerald",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "melvorTotH:Golden_Key",
+              "minQuantity": 1,
+              "maxQuantity": 1,
+              "weight": 20
+            },
+            {
+              "itemID": "melvorD:Bones",
+              "minQuantity": 1,
+              "maxQuantity": 4,
+              "weight": 20
+            },
+            {
+              "itemID": "melvorD:Dragon_Bones",
+              "minQuantity": 1,
+              "maxQuantity": 4,
+              "weight": 20
+            },
+            {
+              "itemID": "melvorD:Magic_Bones",
+              "minQuantity": 1,
+              "maxQuantity": 4,
+              "weight": 20
+            },
+            {
+              "itemID": "melvorD:Big_Bones",
+              "minQuantity": 1,
+              "maxQuantity": 4,
+              "weight": 20
+            },
+            {
+              "itemID": "fatebreaker:Chains_of_Fate",
+              "minQuantity": 1,
+              "maxQuantity": 1,
+              "weight": 1
+            }
+          ],
+          "remove": [
+            "melvorTotH:Golden_Key",
+            "melvorD:Bones",
+            "melvorD:Dragon_Bones",
+            "melvorD:Magic_Bones",
+            "melvorD:Big_Bones"
+          ]
+        }
+      }
+    ]
+  }
+}

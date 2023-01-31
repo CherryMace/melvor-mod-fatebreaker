@@ -1,0 +1,5 @@
+{
+  "namespace": "fatebreaker",
+  "setup": "setup.mjs",
+  "load": "data.json"
+}
